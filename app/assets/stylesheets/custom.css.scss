@@ -1,2 +1,51 @@
+$navbar-default-bg: #009933;
+//#073B15;
+@grid-float-breakpoint
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.center{
+  text-align: center;
+}
+
+.jumbotron{
+  background-image: asset-url("cooking2.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+//*
+#logo{
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  
+}
+
+#logo:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.jumbotron h1, h2{
+  color: #003300;//#660033;// #ff0066;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-xlarge{
+ background-color: #009933;
+//#073B15;; 
+  
+}
+
+.btn-xlarge:hover{
+    color: #fff;
+  text-decoration: none;
+}
+//*/
