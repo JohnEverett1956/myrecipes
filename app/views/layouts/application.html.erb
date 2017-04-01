@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myrecipes</title>
+    <title>MyRecipes</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,6 +10,7 @@
 
   <body>
     <%= render 'layouts/navigation' %>
-    <div class="container">  <%= yield %> </div>
+    <div class="container">  <%= yield %> </div
+    <%= render 'layouts/footer' %>    
   </body>
 </html>
