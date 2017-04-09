@@ -48,4 +48,41 @@ $navbar-default-bg: #009933;
   color: #fff;
   text-decoration: none;
 }
+
+footer{
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a{
+  color: #555;
+  
+}
+
+footer ul{
+  float: right;
+  list-style: none;
+}
+
+footer ul li{
+  float: left;
+  margin-left: 15px;
+}
+.description{
+  margin-top: 0;
+}
+
+.well a{
+  color: #009933;
+}
+
+.chef_info{
+  margin_top: 10px;
+}
+
+.colormatch a{
+  color: #009933;
+}
 //*/
