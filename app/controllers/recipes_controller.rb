@@ -16,7 +16,7 @@ class RecipesController < ApplicationController
     @recipe = Recipe.new(recipe_params)
     @recipe.chef = Chef.first
     if @recipe.save
-      flash[:success] = "Recipe was created successfully"
+      flash[:success] = "Recipe was created successfully!"
       redirect_to recipe_path(@recipe)
     else
       render "new"
