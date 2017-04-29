@@ -15,7 +15,12 @@ $navbar-default-bg: #009933;
   height: 300px;
 }
 
-//*
+//*.
+.navbar-collapse{
+   color: #fff;  
+   font-weight: bold;   
+}
+
 #logo{
   font-size: 1.7em;
   color: #fff;
@@ -75,11 +80,12 @@ footer ul li{
 }
 
 .well a{
-  color: #009933;
+ color: #009933;
+ //color: #fff;
 }
 
 .chef_info{
-  margin_top: 10px;
+  margin-top: 10px;
 }
 
 .colormatch a{
