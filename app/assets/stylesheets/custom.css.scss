@@ -9,6 +9,7 @@ $navbar-default-bg: #009933;
   text-align: center;
 }
 
+
 .jumbotron{
   background-image: asset-url("cooking2.jpg");
   background-size: cover;
@@ -16,10 +17,16 @@ $navbar-default-bg: #009933;
 }
 
 //*.
-.navbar-collapse{
-   color: #fff;  
+.navbar-collapse ul li {
+   color: #009933;  
    font-weight: bold;   
 }
+.navbar-collapse ul li a{
+   color: #009933;  
+   font-weight: bold;   
+}
+
+
 
 .chefs{
    color: #fff;   
