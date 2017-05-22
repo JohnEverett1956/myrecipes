@@ -7,7 +7,7 @@ class ChefsController < ApplicationController
 
   
   def index
-    @chefs = Chef.paginate(page: params[:page], per_page: 2)
+    @chefs = Chef.paginate(page: params[:page], per_page: 4)
   end
   
   def new
@@ -27,7 +27,7 @@ class ChefsController < ApplicationController
   end
   
   def show
-    @chef_recipes = @chef.recipes.paginate(page: params[:page], per_page: 2)
+    @chef_recipes = @chef.recipes.paginate(page: params[:page], per_page: 4)
   end
   
   def edit
@@ -70,8 +70,8 @@ class ChefsController < ApplicationController
    end    
    
    def require_admin
-     if logged_in? && !current_chef.admin?
-       flash[:admin] = "Only Admin users can perfoem that action"
+     if !logged_in? || (logged_in? && !current_chef.admin?)
+       flash[:danger] = "Only Admin users can perfoem that action"
        redirect_to root_path
      end
    end

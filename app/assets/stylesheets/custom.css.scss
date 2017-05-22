@@ -71,6 +71,8 @@ footer{
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 footer a{
@@ -122,5 +124,13 @@ footer ul li{
   font-size: 1.25em;
 }
 
+.badge{
+  background-color: white;
+}
+
+.input-checkbox input{
+  width: auto !important;
+  
+}
 
 //*/
