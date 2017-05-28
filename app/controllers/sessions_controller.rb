@@ -12,6 +12,7 @@ class SessionsController < ApplicationController
        flash[:success] = "You have successfully logged in" 
        redirect_to chef_path(chef)
        session[:chef_id] = chef.id
+       cookies.signed[:chef_id] = chef.id
     else
        flash.now[:danger] = "There was something wrong with your login information"
        render "new"
